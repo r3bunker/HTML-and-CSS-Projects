@@ -265,82 +265,82 @@ section {
   font-family: "Raleway", sans-serif;
 }
 
-.reservation input[type="text"]{
-    font-size: 15px;
-    outline: none;
-    font-weight: 600;
-    color: #8d8e9f;
-    padding: 2% 1% 2% 7%;
-    width: 80%;
-    border-top: 1px solid #090b0d;
-    border-right: 2px solid #434549;
-    border-bottom: 2px solid #424549;
-    border-left: 1px solid #090b0d;
-    margin: 10px 1em;
-    border-radius: 7px;
-    background: #13161b;
-    box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15);
-    font-family: "Raleway", sans-serif;
+.reservation input[type="text"] {
+  font-size: 15px;
+  outline: none;
+  font-weight: 600;
+  color: #8d8e9f;
+  padding: 2% 1% 2% 7%;
+  width: 80%;
+  border-top: 1px solid #090b0d;
+  border-right: 2px solid #434549;
+  border-bottom: 2px solid #424549;
+  border-left: 1px solid #090b0d;
+  margin: 10px 1em;
+  border-radius: 7px;
+  background: #13161b;
+  box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+  font-family: "Raleway", sans-serif;
 }
 
 .reservation input[type="text"]:hover {
-    box-shadow: 0 0 18px rgba(100, 65, 0, 0.8);
+  box-shadow: 0 0 18px rgba(100, 65, 0, 0.8);
 }
 
 .form-spacer {
-    padding: 30px 39px
+  padding: 30px 39px;
 }
 
 .terms {
-    margin: 30px 1px 0 0;
-    padding-left: 52px;
-    font-size: 14px;
-    line-height: 5px;
-    color: #000;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    position: relative;
-    display: inline;
-    float: right;
+  margin: 30px 1px 0 0;
+  padding-left: 52px;
+  font-size: 14px;
+  line-height: 5px;
+  color: #000;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  position: relative;
+  display: inline;
+  float: right;
 }
 
 .terms:hover {
-    color: orange;
-    text-decoration: underline;
+  color: orange;
+  text-decoration: underline;
 }
 
 .submit input[type="submit"] {
-    font-size: 18px;
-    outline: none;
-    font-weight: 900;
-    color: white;
-    padding: 7px 0px;
-    width: 25%;
-    border-top: none;
-    margin: 0px 3%;
-    border-radius: 7px;
-    background-color: #797a7b;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
-    font-family: "Raleway", sans-serif;
-    cursor: pointer;
-    text-align: center;
-    transition: border-color 0.3s color 0.3s background-color 0.3s;
+  font-size: 18px;
+  outline: none;
+  font-weight: 900;
+  color: white;
+  padding: 7px 0px;
+  width: 25%;
+  border-top: none;
+  margin: 0px 3%;
+  border-radius: 7px;
+  background-color: #797a7b;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.3s color 0.3s background-color 0.3s;
 }
 
 .submit input[type="submit"]:hover {
-    color: #000;
-    background-color: #8d8e8f;
-    box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
+  color: #000;
+  background-color: #8d8e8f;
+  box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 /*-----------------------------------------------------------------
     FOOTER STYLES
 ----------------------------------------------------------------*/
 #footer {
-    background-color: rgba(100, 65, 0, 0.3);
-    color: #000;
-    text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
-    padding: 20px 50px 20px 50px;
-    text-align: right:
+  background-color: rgba(100, 65, 0, 0.3);
+  color: #000;
+  text-shadow: 2px 2px 8px 0 (0, 0, 0, 0.4);
+  padding: 20px 50px 20px 50px;
+  text-align: right;
 }
