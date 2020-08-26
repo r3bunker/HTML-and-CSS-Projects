@@ -1,0 +1,258 @@
+body {
+    margin: 0%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* NavBar hover effect to black text-------
+#navbarSupportedContent:hover {
+    color: black;
+}*/
+
+.video-text h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: #4ef0e0;
+    color: black;
+}
+
+.video-container {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.DNA-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*This places video exactly where I want it, but it extents the 
+    page to the right. Need to find a fix.*/
+    margin: auto;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.video-text {
+    background: rgb(0, 0, 0, .5);
+    color: white;
+    width: auto;
+    padding: 25px;
+    margin-top: 25%;
+    text-align: center;
+}
+
+.column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 2%;
+    height: 400px;
+    background-color: rgba(128, 128, 128, 0.479);
+}
+
+.column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 2%;
+    height: 400px;
+    background-color: rgba(7, 255, 234, 0.479);
+    text-align: center;
+    color: white;
+}
+
+.column_3 {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    padding-top: 0;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.479);
+    text-align: center;
+    color: white;
+}
+
+.column_4 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: rgba(7, 255, 234, 0.479);
+    text-align: right;
+    color: white;
+}
+
+.column_5 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 2%;
+    height: 400px;
+    background-color: rgba(128, 128, 128, 0.479);
+}
+
+img {
+    filter: grayscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.column_1 img:hover,
+.column_5 img:hover {
+    transition: transform .75s;
+    transform: scale(1.1);
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+    text-align: center;
+}
+
+.git-image {
+    border-radius: 8px;
+    max-width: 100%;
+    max-height: fit-content;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 0;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: .3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text a {
+    background-color: #4ef0e0;
+    border-radius: 8px;
+    font-size: 30px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+q {
+    font-weight: bold;
+    font-size: 20pt;
+    font-style: italic;
+}
+
+.text a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+form {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.479);
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.column_2 p {
+    color: black;
+    font-size: 14pt;
+    text-align: left;
+    font-weight: 700;
+    padding: 8px 8px;
+}
+
+.column_4 form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8d8e9f;
+    padding: 8px 8px;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 10px auto;
+    border-radius: 7px;
+    background: rgb(227, 222, 222);
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    font-family: "Raleway", sans-serif;
+}
+
+.column_4 input,
+.column_4 label {
+    display: inline-block;
+}
+
+.column_4 input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: black;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #434549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090b0d;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: rgba(128, 128, 128, 0.479);
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+}
+
+.submit {
+    text-align: right;
+}
+
+.submit input[value="Send"] {
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    background-color: black;
+    transition: .5s;
+    transform: scale(1);
+}
+
+.submit input[value="Send"]:hover {
+    background-color: #4ef0e0;
+    transform: .5s;
+    color: black;
+    transition: .5s;
+    transform: scale(1.3);
+}
