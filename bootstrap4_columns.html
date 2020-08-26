@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        html {
+            /*Background Image*/
+            background: url(./HTML_CSS_final_challenges_LOTR/Images/LOTR.png) no-repeat 50% 50%;
+            background-attachment: fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-backgrand-size: cover;
+            background-size: cover;
+            width: 100%;
+            display: block;
+            height: auto;
+            padding-top: 350px;
+            /* This is the spacer before the Main title logo */
+            padding-bottom: 500px;
+            /* This is the spacer after the Main title logo */
+            color: #fff;
+        }
+
+        #LOTR {
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            filter: saturate(100%);
+            width: 100%;
+        }
+
+        p,
+        h3 {
+            text-align: center;
+        }
+
+        span {
+            font-weight: 900;
+            font-size: 40px;
+        }
+
+        footer {
+            text-align: center;
+            margin-block: 200px;
+            display: block;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+
+        }
+
+        td {
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+            background-color: tan;
+        }
+
+        th {
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+            background-color: lightslategray;
+            width: 30%;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: yellow;
+            background-color: black;
+        }
+
+        .navbar-brand:hover,
+        .nav-link:hover {
+            background-color: maroon;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 50%;
+            height: 200px;
+            color: white;
+        }
+
+        .column p:hover {
+            color: black;
+            font-variant: small-caps;
+            font-size: 200%;
+            cursor: pointer;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: 1s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: 1s ease;
+            text-align: center;
+        }
+
+        .container:hover .image {
+            opacity: .3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: rgb(128, 0, 0);
+            font-size: 30px;
+            color: white;
+            padding: 16px 32px;
+        }
+
+        .text:hover {
+            cursor: pointer;
+            color: black;
+        }
+        .vid-container{
+            position:relative;
+            text-align: center;
+
+        }
+        .vid-centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 300px;
+
+        }
+    </style>
+    <title>Challenges</title>
+</head>
+
+<body>
+
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand text-white" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!--End Nav-->
+
+    <!--Image-->
+    <div class="container">
+        <h3><span>Forth Eorlingas!!</span></h3>
+        <img id="LOTR" class="image" src="./HTML_CSS_final_challenges_LOTR/Images/LOTR.png" alt="returnoftheking">
+        <div class="centered">Sound the charge!</div>
+        <p class="center"><cite>Lord of the Rings: Return of the King</cite></p>
+        <div class="middle">
+            <div class="text">Make free the city!</div>
+        </div>
+    </div>
+    <!--End of Image-->
+    <div>
+        <h2> Table of Contents</h2>
+        <table style="width:100%">
+            <tr>
+                <th>Name</th>
+                <th>Race</th>
+                <th>Weapon</th>
+            </tr>
+            <tr>
+                <td>Aragorn</td>
+                <td>Human</td>
+                <td>Sword</td>
+            </tr>
+            <tr>
+                <td>Legolas</td>
+                <td>Elf</td>
+                <td>Bow</td>
+            </tr>
+            <tr>
+                <td>Gimli</td>
+                <td>Dward</td>
+                <td>Axe</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="row">
+        <div class="column" style="background-color: maroon;">
+            <h3>The Two Towers</h3><br>
+            <p>Sauron and Sarumon</p>
+        </div>
+        <div class="column" style="background-color: red;">
+            <h3>Fellowship of the Ring</h3><br>
+            <p>And my Axe!</p>
+        </div>
+    </div>
+    <!--Video-->
+    <div class="vid-container">
+        <div class="video">
+            <video autoplay muted loop>
+                <source src="./HTML_CSS_final_challenges_LOTR/walking_woods.mp4"></video>
+            <div class="vid-centered">Now is the hour..</div>
+        </div>
+    </div>
+    <!--End of video-->
+</body>
+<footer>
+    <a href="r3bunker@gmail.com"> r3bunker@gmail.com</a>
+    <p>Lord of the Rings &#169;</p>
+</footer>
+
+</html>
