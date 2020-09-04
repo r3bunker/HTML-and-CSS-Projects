@@ -1,112 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title> Yellowstone National Park</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="CSS/one-page-website.css"
-	</head>
-	<body>
-		
-		<!--NAV-->
-		<div>
-			<div>
-				<ul>
-					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#gallery" id="link"><li>GALLERY</li></a>
-					<a href="#newsletter" id="link"><li>NEWSLETTER</li></a>
-				</ul>
-			</div>
-		</div>
-		<!--END NAV-->
-		
-		<!--HOME-->
-		<div id="home">
-			<div>
-				<div>
-					<span class="span-font"> Yellowstone Vacation</span>
-				</div>
-			</div>
-		</div>
-		<!--END HOME-->
-		
-		<!--GALLERY-->
-		<section>
-			<div id="gallery">
-				<h1>GALLERY</h1>
-				<div>
-				
-					<!--PHOTO-CONTAINER 1-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_bear1.png" alt="grizzly bear">
-							<div>
-								<h3> Grizzly bear</h3>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO-CONTAINER 1-->
-				
-				<!--PHOTO-CONTAINER 2-->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_bear2.png" alt="mom and her cubs">
-							<div>
-								<h3> Mom and her cubs</h3>
-							</div>
-						</div>
-					</div>
-					<!--END PHOTO-CONTAINER 2-->
-					
-					<!--VIDEO CONTAINER 1-->
-					<div>
-						<div>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/-6r81UOzIHg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+<head>
+    <title> Yellowstone National Park</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/one-page-website.css">
+    <script src="./js/one-pageWebsite.js"></script>
+</head>
+
+<body>
+
+    <!--NAV-->
+    <div>
+        <div>
+            <ul>
+                <a href="#home" id="link">
+                    <li>HOME</li>
+                </a>
+                <a href="#gallery" id="link">
+                    <li>GALLERY</li>
+                </a>
+                <a href="#newsletter" id="link">
+                    <li>NEWSLETTER</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <!--END NAV-->
+
+    <!--HOME-->
+    <div id="home">
+        <div>
+            <div>
+                <span class="span-font"> Yellowstone Vacation</span>
+            </div>
+        </div>
+    </div>
+    <!--END HOME-->
+
+    <!--GALLERY-->
+    <section>
+        <div id="gallery">
+            <h1>GALLERY</h1>
+            <div>
+
+                <!--PHOTO-CONTAINER 1-->
+                <div class="row">
+                    <div class="column">
+                        <img src="./images/thumb/thumbnail_bear1.png" alt="grizzly bear" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <div>
+                            <h3> Grizzly bear</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--END PHOTO-CONTAINER 1-->
+
+                <!--PHOTO-CONTAINER 2-->
+                <div class="row">
+                    <div class="column">
+                        <img src="./images/thumb/thumbnail_bear2.png" alt="mom and her cubs" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                        <div>
+                            <h3> Mom and her cubs</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--END PHOTO-CONTAINER 2-->
+
+                <!--VIDEO CONTAINER 1-->
+                <div>
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-6r81UOzIHg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 							</iframe>
-							<div>
-								<h3> Bears wrestling</h3>
-							</div>
-						</div>
-					</div>
-					<!--END VIDEO-CONTAINER 3-->
-					
-				</div>
-			</div>
-		</section>
-		
-		<!--NEWSLETTER-->
-		<section>
-			<div id="newsletter">
-				<div class="container">
-					<h1 class=> NEWSLETTER</h1>
-					<div class="news">
-						<h2><span> Stay up to date on all things bears!</span></h2>
-						<p> 
-							Please sign up for our weekly newsletter.
-						</p>
-						<div class="form-rsvp">
-							<form action="" method="post">
-								<input class="newsletter" type="text" value="First Name">
-								<input class="newsletter" type="text" value="Last Name">
-								<input class="newsletter" type="text" value="Email Address">
-								<input class="newsletter" type="text" value="Phone Number">
-								<div class="form-spacer">
-									<label class="terms"> Terms and Conditions</label>
-								</div class="submit">
-									<input type="submit" value="Submit">
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--END NEWSLETTER-->
-		
-		<!--FOOTER-->
-		<div>
-			www.yellowstone.park &nbsp;|&nbsp &copy; 2020
-		</div>
-		<!--END FOOTER-->
-	</body>
+                        <div>
+                            <h3> Bears wrestling</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--END VIDEO-CONTAINER 3-->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modalContent">
+                        <div class="mySlides">
+                            <div class="numberText">1 / 2</div>
+                            <img src="../One-Page Website/images/thumb/thumbnail_bear1.png" alt="grizzlybear" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numberText">2 / 2</div>
+                            <img src="../One-Page Website/images/thumb/thumbnail_bear2.png" alt="mommabear" style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <div class="captionContainer">
+                            <p id="caption"></p>
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../One-Page Website/images/thumb/thumbnail_bear1.png" style="width:100%" onclick="currentSlide(1)" alt="Grizzly">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../One-Page Website/images/thumb/thumbnail_bear2.png" style="width:100%" onclick="currentSlide(2)" alt="mommabear">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--NEWSLETTER-->
+    <section>
+        <div id="newsletter">
+            <div class="container">
+                <h1 class=> NEWSLETTER</h1>
+                <div class="news">
+                    <h2><span> Stay up to date on all things bears!</span></h2>
+                    <p>
+                        Please sign up for our weekly newsletter.
+                    </p>
+                    <div class="form-rsvp">
+                        <form action="" method="post">
+                            <input class="newsletter" type="text" value="" placeholder="First Name">
+                            <input class="newsletter" type="text" value="" placeholder="Last Name">
+                            <input class="newsletter" type="text" value="" placeholder="Email Address">
+                            <input class="newsletter" type="text" value="" placeholder="Phone Number">
+                            <div class="form-spacer">
+                                <label class="terms"> Terms and Conditions</label>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END NEWSLETTER-->
+
+    <!--FOOTER-->
+    <div>
+        www.yellowstone.park &nbsp;|&nbsp &copy; 2020
+    </div>
+    <!--END FOOTER-->
+
+</body>
+
 </html>
-				
-			
