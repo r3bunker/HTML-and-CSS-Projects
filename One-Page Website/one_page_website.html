@@ -6,10 +6,11 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="CSS/one-page-website.css">
     <script src="./js/one-pageWebsite.js"></script>
+    
 </head>
 
 <body>
-
+    <script>document.body.className += ' fade-out'; </script>
     <!--NAV-->
     <div>
         <div>
@@ -142,7 +143,12 @@
         www.yellowstone.park &nbsp;|&nbsp &copy; 2020
     </div>
     <!--END FOOTER-->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('body').removeClass('fade-out');
+        });
+    </script>
 </body>
 
 </html>

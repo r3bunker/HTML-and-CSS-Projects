@@ -1,6 +1,16 @@
 html {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 20px;
+    
+}
+body{
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 * {
@@ -9,7 +19,7 @@ html {
 
 .span-font {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-    font-size: 50px;
+    font-size: 5vw;
 }
 
 .container {
