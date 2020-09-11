@@ -8,19 +8,42 @@
     <title>Ryan Bunker</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>script>
+
+
+
+
 </head>
 
 
-<body scroll="no" style="overflow-x: hidden" id="nav-container">
+<body scroll="no" style="overflow-x: hidden" id="nav-container" class="container-fluid">
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+
     <!--Nav-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-danger bg-danger">
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link text-white" href="#Home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#Slideshow">Slideshow</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#About">About</a>
@@ -29,7 +52,7 @@
                     <a class="nav-link text-white" href="#GitHub">GitHub</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#Contact">Contact</a>
+                    <a class="nav-link text-white" href="#Social">Social</a>
                 </li>
 
         </div>
@@ -40,7 +63,8 @@
         <!--Background Video-->
         <div class=".video_container">
             <video autoplay muted loop class="DNA-video">
-                <source src="./Videos/background_DNA.mp4" type="video/mp4"> </video> Your browser doesn't support this video type.
+                <source src="./Videos/networkWeb.mp4" type="video/mp4"> </video> Your browser doesn't support this
+            video type.
 
         </div>
         <!--End background video-->
@@ -63,6 +87,54 @@
     </div>
     <!--End Home-->
 
+
+    <!--Slideshow-->
+    <div id="Slideshow" class="slideshowContainer">
+
+        <div class="mySlides fade">
+            <img src="./Images/ryanFace.jpg" alt="Ryan">
+            <div class="caption" style="color:white;">I am ready and available to<br> help with your projects!</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="Images/htmlcssjs.png" alt="htmlcssjs">
+            <div class="caption">I am a full-stack software <br>developer trained in <br>HTML,CSS,JavaScript,</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./Images/python.png" alt="python">
+            <div class="caption">the popular language Python,</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./Images/cSharp.png" alt="c#">
+            <div class="caption">C# and the .net framework,</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./Images/SQL.png" alt="SQL">
+            <div class="caption">backend development,<br> databases, and SQL.</div>
+        </div>
+
+        <a class="prev" style="color:white;" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" style="color: white;" onclick="plusSlides(1)">&#10095;</a>
+
+
+    </div>
+    <br>
+
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+
+
+    <!--/Slideshow-->
+
     <!--About Section-->
     <div class="row" id="About">
         <div class="column_1">
@@ -71,7 +143,11 @@
         <div class="column_2">
             <h1>About</h1>
             <p>
-                I am a software developer who loves the natural world sciences. I recently graduated with a Bachelor's degree in Biology from the Utah Valley University. I'm now on a mission to merge my knowledge of biology with the computer.<br> <br>                I am a graduate of The Tech Academy’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more.<br><br> I am a full-stack developer and would
+                I am a software developer who loves the natural world sciences. I recently graduated with a Bachelor's
+                degree in Biology from the Utah Valley University. I'm now on a mission to merge my knowledge of biology
+                with the computer.<br> <br> I am a graduate of The Tech Academy’s Software Developer Boot Camp, and
+                trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL,
+                Python, C# and more.<br><br> I am a full-stack developer and would
                 love to work with you on your project. Contact me below!
 
             </p>
@@ -98,26 +174,71 @@
 
 
     <!--Contact Section-->
-    <div class="row" id="Contact">
+    <div class="row" id="Social">
         <div class="column_4">
-            <h1>Contact Me</h1>
-            <form action="mailto:r3bunker@gmail.com" method="get">
-                <label>Name:</label>
-                <input type="text" placeholder="Please enter your name here"><br>
-                <label>Email:</label>
-                <input type="text" placeholder="Please enter your email here"><br>
-                <label>Message:</label>
-                <input type="text" placeholder="Please write your message here"><br>
-                <div class="submit">
-                    <input type="submit" value="Send">
-                </div>
-            </form>
+            <h1>Social Media</h1>
+
+            <div class="socialMedia">
+                <div class="socialLinked"><img src="./Images/linkedIn.png" alt="linkedIn"></div>
+                <div class="socialInsta"><img src="./Images/insta.png" alt="instagram"></div>
+                <div class="socialSlack"><img src="./Images/slack.png" alt="slack"></div>
+            </div>
+
         </div>
         <div class="column_5">
             <img src="./Images/motherboard.jpg " alt="motherboard">
         </div>
     </div>
     <!--End Contact Section-->
+
+    <!--Contact Button-->
+
+    <div class="contactButton">
+        <button id="Contact" data-toggle="modal" data-target="#contactMe" type="button" class="btn btn-danger">Contact
+            Me</button>
+
+        <div class="modal" tabindex="-1" id="contactMe">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Message me to get in contact!</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" id="myForm" action="" method="">
+                            <div class="form-group">
+                                <label for="Full Name">Full Name</label>
+                                <input name="fullName" type="text" class="form-control" id="fullName"
+                                    placeholder="Please enter full name" require />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input name="email" type="email" class="form-control" id="email"
+                                    placeholder="Enter email" require>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <input name="bodyMessage" type="text" class="form-control" id="bodyMessage"
+                                    placeholder="Enter message" require>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="btnCloseIt" class="btn btn-secondary"
+                                    data-dismiss="modal">Close</button>
+                                <button type="submit" id="btnSendIt" class="btn btn-primary">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--/Contact Button-->
+
 
 
 
@@ -136,9 +257,53 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="./JS/javascript.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#MyModal").modal();
+        });
+
+        $(function () {
+
+            $("#myForm").validate({
+                rules: {
+                    fullName: {
+                        required: true,
+                    },
+                    bodyMessage: {
+                        required: true,
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+
+                },
+                messages: {
+                    fullName: {
+                        required: "Please enter full name"
+                    },
+                    bodyMessage: {
+                        required: "The message box is empty"
+                    },
+                    email: {
+                        required: "Please enter a valid email address"
+                    },
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
